@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Title:  Seminole Search Engine
+      Author: Sydney Dell
+      Date: 8-5-2015
+      Filename: search.html
+   -->
+   <meta charset="utf-8" />
+   <meta id="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Seminole Search Engine</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="modernizr.custom.65897.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1> Seminole Search Engine </h1>
+   </header>
+
+   <article>
+      <form>
+         <fieldset>
+            <input type="search" />
+            <input type="submit" value="Search" />
+         </fieldset>
+
+      <p class="credit"> Powered by <a href="http://bing.com"> Bing</a></p>  
+      </form>
+   </article>
+    
+     <script>
+        $(document).ready(function(){
+           $(':submit').click(function(){               
+               var message = 'q=' + document.getElementsByTagName("input")[0].value;  
+
+             $.ajax({
+               type: 'GET',
+               
+               url: 'search.php?',
+              
+               data: message,
+               
+               dataType: 'json'
+              
+             })
+               .done(function(json){
+                 var items = json.d.results;
+                 var articleE1 = document.getElementsByTagName("article")[0];
+               
+               for (var i = 0; i < items.length; i++) {
+                 var newDiv = document.createElement("div");
+                 var head = document.createDocumentFragment();
+                 var newP1 = document.createElement("p");
+                 var newP2 = document.createElement("p");
+                 var newP3 = document.createElement("p");
+                 var newA = document.createElement("a");
+                 
+                 head.appendChild(newP1);
+                 newA.innerHTML = items[i].Title;
+                 newA.setAttribute("href", items[i].Url);
+                 
+                 newP1.appendChild(newA);
+                 newP1.className = "head";
+                 newP2.innerHTML = items[i].Url;
+                 newP2.className = "url";
+                 newP3.innerHTML = items[i].Description;
+                 
+                 newDiv.appendChild(head);
+                 newDiv.appendChild(newP2);
+                 newDiv.appendChild(newP3);
+                 articleE1.appendChild(newDiv);
+                 
+               }//end of for
+             })//end of done
+             
+             .fail(function() {
+               alert("Posting failed.");
+             });
+             
+             
+          return false;
+      });//end of submit
+  });//end of ready      
+ </script>  
+    
+</body>
+</html>

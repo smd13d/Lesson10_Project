@@ -1,0 +1,96 @@
+{
+ "sections": [
+  {
+   "id": "84cd39ed-d65f-26c1-a7e8-a0596a6f41cf",
+   "title": "Seminole Search Engine",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Seminole-Search-Engine-84cd.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "fe3a2b06-6685-76fc-247c-b60457c1ad01",
+   "title": "Step 1 - Register for Bing Account",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Step-1---Register-for-Bing-Account-fe3a.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "22b86acc-b535-7827-7c9c-541647bc51ea",
+   "title": "Step 2 - Use $.ajax() to Send Request ",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Step-2---Use---ajax---to-Send-Request--22b8.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "6b90a1ab-5711-3bc8-77e4-ec6ab287e10c",
+   "title": "Step 3 - Use .done() Method to Process Request ",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Step-3---Use--done---Method-to-Process-Request--6b90.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "74ab7e8-f5c9-948a-d2ea-c569c324e7c7",
+   "title": "Step 4 - Verify AJAX jQuery Code",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Step-4---Verify-AJAX-jQuery-Code-74ab.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "acf5592c-887d-ec3e-9c30-7d9e58dc7917",
+   "title": "Step 5 - Add Bing Credit",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Step-5---Add-Bing-Credit-acf5.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "5fbf9226-4aab-ffaf-cbbc-391f3d5f6889",
+   "title": "Step 6 - View App",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Step-6---View-App-5fbf.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "4e99d6e5-a05-e745-4067-15e244d4911d",
+   "title": "Grading Rubric",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Grading-Rubric-4e99.md",
+   "chapter": false,
+   "reset": []
+  },
+  {
+   "id": "b0d96757-6209-b24c-7fa0-c7cdb32b274",
+   "title": "All Done!!",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/New-Section-9-b0d9.md",
+   "chapter": false,
+   "reset": []
+  }
+ ],
+ "theme": "light",
+ "scripts": []
+}
